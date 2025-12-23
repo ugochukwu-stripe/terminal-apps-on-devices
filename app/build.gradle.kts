@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.stripe.aod.sampleapp"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.stripe.aod.sampleapp"
         minSdk = 28
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -30,8 +30,10 @@ android {
         jvmToolchain(JavaLanguageVersion.of(17).asInt())
     }
 
-    kotlinOptions {
-        allWarningsAsErrors = true
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+        compilerOptions {
+            allWarningsAsErrors.set(true)
+        }
     }
 
     buildFeatures {

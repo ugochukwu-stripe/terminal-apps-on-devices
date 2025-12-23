@@ -30,6 +30,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             startActivity(Intent(Intent.ACTION_VIEW).setData(Uri.parse("stripe://settings/")))
         }
 
+        viewBinding.sampleTip.apply {
+            text = "$text \n(Built with Kotlin ${KotlinVersion.CURRENT})"
+        }
+
         launchAndRepeatWithViewLifecycle {
             viewModel.readerConnectStatus.collect {
                 viewBinding.indicator.visibility = if (it != ConnectionStatus.CONNECTED) {

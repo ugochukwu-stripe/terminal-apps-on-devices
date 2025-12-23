@@ -1,14 +1,14 @@
 [versions]
-lifecycle-version = "2.8.7"
-navigation-version = "2.8.8"
-retrofit-version = "2.11.0"
+lifecycle-version = "2.10.0"
+navigation-version = "2.9.6"
+retrofit-version = "3.0.0"
 stripeterminal-version = "5.1.0"
 
 [libraries]
-androidx-appcompat = "androidx.appcompat:appcompat:1.7.0"
-androidx-core-ktx = "androidx.core:core-ktx:1.15.0"
-androidx-fragment-ktx = "androidx.fragment:fragment-ktx:1.8.6"
-androidx-swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+androidx-appcompat = "androidx.appcompat:appcompat:1.7.1"
+androidx-core-ktx = "androidx.core:core-ktx:1.17.0"
+androidx-fragment-ktx = "androidx.fragment:fragment-ktx:1.8.9"
+androidx-swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.2.0"
 
 androidx-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata", version.ref = "lifecycle-version" }
 androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle-version" }
@@ -19,7 +19,7 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 
 android-material = "com.google.android.material:material:1.12.0"
 
-kotlinx-coroutines-android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1"
+kotlinx-coroutines-android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2"
 
 okhttp = "com.squareup.okhttp3:okhttp:4.12.0"
 
